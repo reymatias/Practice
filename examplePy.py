@@ -138,3 +138,30 @@ def example4():
 
 
 # Chapter 13: Common Python Errors
+# NameError: (Exception error)
+'''
+varaible = 55
+print(variable)
+'''
+
+# ExpectedIndent (Syntax error); NOTE: can have child functions
+'''
+def func1():
+    
+def func2():
+    print(2)
+'''
+
+# UnexpectedIndent
+'''
+def task():
+    print('1')
+print('2')
+    print('3')
+'''
+
+# ExpectedEOF
+'''
+print('Hey there how are you today?'
+'''
+

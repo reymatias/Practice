@@ -165,3 +165,67 @@ print('2')
 print('Hey there how are you today?'
 '''
 
+# Chapter 14: Writing to a File
+writeMe = 'Example text'
+saveFile = open('exampleWrite.txt','w')
+saveFile.write(writeMe)
+saveFile.close()
+
+# Chapter 15: Appending to a File
+appendMe = 'Some text'
+appendMeAgain = '\nSome more text'
+saveFile = open('exampleFile.txt','a')
+saveFile.write(appendMe)
+saveFile.write(appendMeAgain)
+saveFile.close()
+
+# Chapter 16: Reading from a File
+readMe = open('exampleFile.txt','r').read()
+print(readMe)
+splitMe = readMe.split('\n')
+print(splitMe)
+print(splitMe[2])
+
+readMe2 = open('exampleFile.txt','r').readlines()
+print(readMe2)
+
+# Chapter 17: Classes
+class calc:
+    def add(x,y):
+        answer = x+y
+        print(answer)
+        
+    def sub(x,y):
+        answer = x-y
+        print(answer)
+        
+    def mult(x,y):
+        answer = x*y
+        print(answer)
+        
+    def div(x,y):
+        answer = x/y
+        print(answer)
+
+# Chapter 18: Input and Statistics
+# Input from user
+'''
+name = input('What is your name: ')
+print('Hello',name)
+'''
+
+import statistics
+
+exList = [5,4,3,3,2,1]
+x = statistics.mean(exList)
+print(x)
+x = statistics.median(exList)
+print(x)
+x = statistics.mode(exList)
+print(x)
+x = statistics.stdev(exList)
+print(x)
+x = statistics.variance(exList)
+print(x)
+
+# Chapter 19: Import Syntax

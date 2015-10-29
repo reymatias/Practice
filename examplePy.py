@@ -172,8 +172,8 @@ saveFile.write(writeMe)
 saveFile.close()
 
 # Chapter 15: Appending to a File
-appendMe = 'Some text'
-appendMeAgain = '\nSome more text'
+appendMe = 'Some text\n'
+appendMeAgain = 'Some more text\n'
 saveFile = open('exampleFile.txt','a')
 saveFile.write(appendMe)
 saveFile.write(appendMeAgain)
@@ -184,7 +184,6 @@ readMe = open('exampleFile.txt','r').read()
 print(readMe)
 splitMe = readMe.split('\n')
 print(splitMe)
-print(splitMe[2])
 
 readMe2 = open('exampleFile.txt','r').readlines()
 print(readMe2)
